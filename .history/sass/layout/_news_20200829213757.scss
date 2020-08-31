@@ -1,0 +1,26 @@
+.news {
+    height: 75rem;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: ;
+    }
+
+    &__title {
+        color: $color-tertiary;
+    }
+
+    &__items {
+        height: 25rem;
+    }
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}

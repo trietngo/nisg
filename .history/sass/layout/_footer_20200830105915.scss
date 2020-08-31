@@ -1,0 +1,28 @@
+.footer {
+    height: 30rem;
+    background-color: $color-tertiary;
+    display: flex;
+    padding: 6rem;
+
+    &__left, &__right, &__middle {
+        flex: 1;
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: lightgray;
+
+        &--facebook:hover {
+            fill: #4267B2;
+        }
+
+        &--insta {
+            fill: #E1306C;
+        }
+
+        &--twitter {
+            fill: #00acee;
+        }
+    }
+}

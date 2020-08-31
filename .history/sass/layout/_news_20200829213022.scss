@@ -1,0 +1,16 @@
+.news {
+    height: 75rem;
+    background-color: $color-primary;
+
+    &__title {
+        color: $color-tertiary;
+    }
+
+    
+
+    &__img {
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}

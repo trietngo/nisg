@@ -1,0 +1,16 @@
+.testimonials {
+    height: 50rem;
+    background-color: $color-tertiary;
+    display: flex;
+    flex-direction: row;
+
+    &__img {
+        flex: 1;
+        background-image: url(../../img/Triet.jpg);
+        
+    }
+
+    &__quote {
+        flex: 2;
+    }
+}

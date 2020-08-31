@@ -1,0 +1,31 @@
+.testimonials {
+    height: 50rem;
+    background-color: $color-tertiary;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__img {
+        flex: 1;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    &__quote {
+        flex: 1.25;
+        padding: 6rem;
+        color: $color-primary;
+    }
+
+}
+
+.quote {
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.subquote {
+    font-size: 2rem;
+    font-weight: 700;
+}

@@ -1,0 +1,26 @@
+.enrollment {
+    background-color: $color-primary;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-tertiary;
+    height: 100%;
+
+    &__total {
+        text-align: center;
+    }
+
+    &__breakdown {
+        display: flex;
+    }
+
+    &__category {
+
+        &--icon {
+            width: 10rem;
+        }
+    }
+}
+

@@ -1,0 +1,20 @@
+.testimonials {
+    height: 50rem;
+    background-color: $color-tertiary;
+    display: flex;
+
+    &__wrapper {
+        width: 20rem;
+    }
+
+    &__img {
+        width: 100%;
+        transform: translateX(-13rem);
+    }
+
+    &__quote {
+        flex: 1.25;
+    }
+
+}
+

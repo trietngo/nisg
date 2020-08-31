@@ -1,0 +1,18 @@
+.testimonials {
+    height: 50rem;
+    background-color: $color-tertiary;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__img {
+        flex: 1;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    &__quote {
+        flex: 1.25;
+    }
+
+}
+

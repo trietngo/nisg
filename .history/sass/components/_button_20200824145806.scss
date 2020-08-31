@@ -1,0 +1,10 @@
+.btn {
+    color: $color-secondary !important;
+    height: 2rem;
+    border: .2rem solid $color-secondary;
+    border-radius: 2rem;
+
+    &:hover {
+        color: $color-primary !important;
+    }
+}

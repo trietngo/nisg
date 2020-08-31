@@ -1,0 +1,9 @@
+.btn {
+    color: $color-secondary !important;
+    border: .2rem solid;
+    border-radius: 2rem;
+
+    &:hover {
+        color: $color-primary;
+    }
+}

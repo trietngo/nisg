@@ -1,0 +1,22 @@
+.selection {
+    height: 50rem;
+    background-color: $color-primary;
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__items {
+        fill: $color-secondary;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-secondary;
+    }
+
+}

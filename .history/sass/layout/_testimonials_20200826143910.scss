@@ -1,0 +1,10 @@
+.testimonials {
+    height: 50rem;
+    background-color: $color-tertiary;
+    display: flex;
+
+    &__img {
+        flex: 1;
+        background-image: url(img/Triet.jpg);
+    }
+}

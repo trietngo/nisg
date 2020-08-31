@@ -1,0 +1,36 @@
+.selection {
+    height: 50rem;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        width: 26rem;
+    }
+
+    &__icon {
+        height: 10rem;
+        margin-bottom: 4rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__details {
+        text-align: center;
+    }
+}

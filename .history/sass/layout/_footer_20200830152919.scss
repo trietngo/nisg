@@ -1,0 +1,37 @@
+.footer {
+    height: 35rem;
+    background-color: $color-tertiary;
+    display: flex;
+
+    &__left, &__right {
+        flex: 1;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    &__icon {
+        height: 4rem;
+        width: 4rem;
+        fill: darkgray;
+        transition: all .2s;
+
+        &--facebook:hover {
+            fill: #4267B2;
+            transition: all .2s;
+        }
+
+        &--insta:hover {
+            fill: #E1306C;
+            transition: all .2s;
+        }
+
+        &--twitter:hover {
+            fill: #00acee;
+            transition: all .2s;
+        }
+    }
+
+    &__img &__logo {
+        height: 7rem;
+    }
+}

@@ -1,0 +1,57 @@
+.header {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    &__container--left {
+        flex: 1;
+        padding: 3rem 7rem;
+    }
+
+    &__container--right {
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        align-content: ;
+    }
+    
+    &__upper {
+        background-color: $color-primary;
+        flex: 0 1 22.5rem;
+        display: flex;
+    }
+
+    &__logo {
+        height: 15rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $color-tertiary;
+    }
+
+    &__lower {
+        background-color: $color-secondary;
+        flex: 1;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $color-tertiary;
+    }
+
+    &__nav {
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__external {
+        display: inline;
+        background-color: $color-secondary;
+        padding: 3rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+    }
+}

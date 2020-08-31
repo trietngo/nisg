@@ -1,0 +1,27 @@
+.selection {
+    height: 50rem;
+    background-color: $color-primary;
+    display: flex;
+    justify-items: center;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        height: 12rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__details {
+        text-align: center;
+    }
+}
