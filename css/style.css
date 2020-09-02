@@ -236,17 +236,41 @@ body {
     font-size: 2rem;
     font-weight: 700;
     color: #ffffff;
-    padding: 0 3rem;
+    padding: 0 3.5rem;
     transition: all .3s;
     white-space: nowrap; }
     .header__link:hover {
       color: #ffcc00;
       transition: all .3s; }
+  .header__item:hover > .header__nav--dropdown {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: space-evenly;
+    padding: 0 3.5rem;
+    transform: translateY(2rem); }
   .header__nav {
     list-style-type: none;
     display: flex;
     padding-right: 6rem;
+    align-content: center;
     flex-wrap: wrap; }
+    .header__nav--dropdown {
+      list-style-type: none;
+      background-color: #4b116f;
+      z-index: 1;
+      position: absolute;
+      display: none; }
+      .header__nav--dropdown---item {
+        display: block;
+        color: #ffcc00;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        transition: all .3s; }
+        .header__nav--dropdown---item:hover {
+          color: #ffffff;
+          transition: all .3s; }
   .header__external {
     display: inline;
     background-color: #ffcc00;

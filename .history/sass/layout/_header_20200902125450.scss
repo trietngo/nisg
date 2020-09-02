@@ -56,8 +56,7 @@
         flex-direction: column;
         height: 25rem;
         justify-content: space-evenly;
-        padding: 0 3.5rem;
-        transform: translateY(2rem);
+        padding: 0 3rem;
     }
 
     &__nav {
@@ -80,7 +79,6 @@
                 text-decoration: none;
                 font-size: 2rem;
                 font-weight: 700;
-                transition: all .3s;
 
                 &:hover {
                     color: $color-tertiary;

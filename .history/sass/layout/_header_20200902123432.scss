@@ -49,15 +49,7 @@
             color: $color-secondary;
             transition: all .3s;
         }
-    }
 
-    &__item:hover > &__nav--dropdown {
-        display: flex;
-        flex-direction: column;
-        height: 25rem;
-        justify-content: space-evenly;
-        padding: 0 3.5rem;
-        transform: translateY(2rem);
     }
 
     &__nav {
@@ -69,23 +61,13 @@
 
         &--dropdown {
             list-style-type: none;
-            background-color: $color-primary;
-            z-index: 1;
-            position: absolute;
-            display: none;
+            background-color: $color-secondary;
 
             &---item {
-                display: block;
-                color: $color-secondary;
+                color: $color-primary;
                 text-decoration: none;
                 font-size: 2rem;
                 font-weight: 700;
-                transition: all .3s;
-
-                &:hover {
-                    color: $color-tertiary;
-                    transition: all .3s;
-                }
             }
         }
     }

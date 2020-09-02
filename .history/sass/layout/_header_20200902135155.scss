@@ -55,9 +55,12 @@
         display: flex;
         flex-direction: column;
         height: 25rem;
+        align-items: flex-start;
         justify-content: space-evenly;
-        padding: 0 3.5rem;
-        transform: translateY(2rem);
+        padding: 0 3rem;
+        visibility: visible;
+
+        transition: all .3s;
     }
 
     &__nav {
@@ -72,7 +75,9 @@
             background-color: $color-primary;
             z-index: 1;
             position: absolute;
-            display: none;
+            visibility: hidden;
+
+            transition: all .3s;
 
             &---item {
                 display: block;
