@@ -26,11 +26,10 @@ const isInView = el => {
 }
 
 document.addEventListener( 'DOMContentLoaded', () => {
-    const div = document.querySelector( '.enrollment__category--subtitle' )
+    const div = document.querySelector( '.enrollment' )
 	
 	const handler = () => raf( () => {
 		if (isInView( div )) {
-            console.log("In view");
             const counters = document.querySelectorAll(".counter"); // Select all elements with "counter" class
             const speed = 200;
             
@@ -44,7 +43,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
             
                     if (count < target) {
                         counter.innerText = count + inc;
-                        setTimeout(updateCount, 50);
+                        setTimeout(updateCount, 10);
                     } else {
                         counter.innerText = target;
             
@@ -56,8 +55,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
                 }
                 updateCount();
             });
-        } else {
-            console.log("Not in view");
         }
 	} )
 	
@@ -69,7 +66,6 @@ const raf =
     window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.mozRequestAnimationFrame ||
-    
     function( callback ) {
         window.setTimeout( callback, 1000 / 60 )
 }

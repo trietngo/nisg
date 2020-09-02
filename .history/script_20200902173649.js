@@ -44,7 +44,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
             
                     if (count < target) {
                         counter.innerText = count + inc;
-                        setTimeout(updateCount, 50);
+                        setTimeout(updateCount, 20);
                     } else {
                         counter.innerText = target;
             
@@ -69,7 +69,6 @@ const raf =
     window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.mozRequestAnimationFrame ||
-    
     function( callback ) {
         window.setTimeout( callback, 1000 / 60 )
 }
