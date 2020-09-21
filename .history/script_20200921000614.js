@@ -29,7 +29,7 @@ const isInView = el => {
 		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
 }
 
-// Activate the counter when the element is in view
+// Activate the counter when the element is inview
 
 document.addEventListener( 'DOMContentLoaded', () => {
     const div = document.querySelector( '.enrollment__category' )

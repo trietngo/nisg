@@ -1,4 +1,4 @@
-// Adding new navigation class for small screens
+// 
 
 function myFunction() {
     var x = document.getElementById("nav");
@@ -9,7 +9,7 @@ function myFunction() {
     }
 }
 
-// Check if element is in view
+// Activate counters when element is in view
 
 const isInView = el => {
 	const scroll = window.scrollY || window.pageYOffset
@@ -29,15 +29,12 @@ const isInView = el => {
 		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
 }
 
-// Activate the counter when the element is in view
-
 document.addEventListener( 'DOMContentLoaded', () => {
-    const div = document.querySelector( '.enrollment__category' )
+    const div = document.querySelector( '.enrollment__category--subtitle' )
 	
 	const handler = () => raf( () => {
 		if (isInView( div )) {
-
-            // console.log("In view");
+            console.log("In view");
             const counters = document.querySelectorAll(".counter"); // Select all elements with "counter" class
             const speed = 200;
             
@@ -71,8 +68,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	handler()
 	window.addEventListener( 'scroll', handler )
 } )
-
-// Request Animation Frame
 
 const raf = 
     window.requestAnimationFrame ||

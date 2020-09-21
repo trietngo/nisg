@@ -9,7 +9,7 @@ function myFunction() {
     }
 }
 
-// Check if element is in view
+// Activate counters when element is in view
 
 const isInView = el => {
 	const scroll = window.scrollY || window.pageYOffset
@@ -28,8 +28,6 @@ const isInView = el => {
 	return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
 		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
 }
-
-// Activate the counter when the element is in view
 
 document.addEventListener( 'DOMContentLoaded', () => {
     const div = document.querySelector( '.enrollment__category' )
@@ -72,7 +70,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	window.addEventListener( 'scroll', handler )
 } )
 
-// Request Animation Frame
+// Check
 
 const raf = 
     window.requestAnimationFrame ||

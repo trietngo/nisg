@@ -9,7 +9,7 @@ function myFunction() {
     }
 }
 
-// Check if element is in view
+// Activate counters when element is in view
 
 const isInView = el => {
 	const scroll = window.scrollY || window.pageYOffset
@@ -29,7 +29,7 @@ const isInView = el => {
 		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
 }
 
-// Activate the counter when the element is in view
+//
 
 document.addEventListener( 'DOMContentLoaded', () => {
     const div = document.querySelector( '.enrollment__category' )
